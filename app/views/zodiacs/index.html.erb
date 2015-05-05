@@ -1,0 +1,11 @@
+<h1>Hi</h1>
+
+<!--<%= debug@listofzodiacs %>-->
+
+<ul>
+<% @listofzodiacs.each do |zodiac| %>
+<li><%= zodiac.sign.capitalize %>:<%= zodiac.fortune.capitalize %> <a href="http://localhost:3000/delete_zodiacs/<%= zodiac.id %>">Delete</a></li>
+
+<% end %>
+
+</ul>
